@@ -8,7 +8,15 @@
      
     <h1>
         <?php  
-            echo "Hello";
+
+        #Declaring a Variable.
+            $greeting = "Hello";
+
+        #Using Concatenation with Variables.
+            echo $greeting . " " . "Everybody!";
+        #Refactoring and Double Quotes Needed otherwise name of Variable shows.
+            echo "$greeting Everybody!"; 
+
         ?>
     </h1>
 
