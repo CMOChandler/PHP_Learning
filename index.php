@@ -21,6 +21,12 @@
                 $message = "You have not read $nameofbook";  
             }
 
+        //Defining a new variable using arrays.
+            $books = [
+                "Do Androids Dream of Electric Sheep",
+                "The Langoliers",
+                "Hail Mary"
+            ];
         ?>
 
     <h1>
@@ -52,6 +58,23 @@
 
     </h1>
 
+    <h1>
+            Recommended Books
+    </h1>
+
+    <ul>
+        
+        <!--For Each of the books listed in previous array will show in the unordered list tag -->
+            <?php foreach ($books as $book){
+                echo "<li> $book </li>";
+            }      
+        
+            ?>
+
+        <!--Another way of rewriting the echo tag above would be...
+        <li> <?= $book ?> </li> -->
+
+    </ul>
 
 </body>
 </html>
