@@ -76,5 +76,20 @@
 
     </ul>
 
+    <p>
+        <!-- Arrays start from 0 -->    
+        <?= $books[2] ?>
+    </p>
+        <!-- Arrays like the one below can have arrays inside of them giving them more information about a particular value
+    <?php
+        $books2 = [
+            [
+                "name" => "Do Androids Dream of Electric Sheep",
+                "Author" => "Philip K. Dick",
+            ]
+        ]
+
+    ?>  -->
+
 </body>
 </html>
